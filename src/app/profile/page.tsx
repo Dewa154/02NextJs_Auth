@@ -15,6 +15,7 @@ export default function ProfilePage() {
       const res = await axios.post("/api/users/me")
       console.log(res.data);
       setdata(res.data.data._id)
+     
     } catch (error: any) {
       console.log(error.message);
       toast.error(error.message)
